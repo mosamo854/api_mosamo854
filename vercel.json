@@ -1,0 +1,15 @@
+{
+    "version": 1,
+    "build": [
+        {
+            "src": "api/trip.ts",
+            "use": "@now/node"
+        }
+    ],
+    "router": [
+        {
+            "src":  "/(.*)",
+            "dest": "trip.ts"
+        }
+    ]
+}
